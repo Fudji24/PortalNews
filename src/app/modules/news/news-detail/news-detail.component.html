@@ -1,0 +1,28 @@
+<style>
+  .card .card-body #newImg{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    object-position: center;
+  }
+</style>
+
+<br/>
+<br/>
+<div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      
+      <h5 class="card-title">{{currentNew?.Title}}</h5>
+      <img id="newImg" src={{currentNew?.ImgPath}}>
+      <br/>
+      <br/>
+      <p class="card-text" style="text-align: justify;">{{currentNew?.NewsContent}}</p>
+    </div>
+    
+    <div class="card-footer text-muted">
+        {{currentNew?.DateAdded}}
+    </div>
+  </div>
+  

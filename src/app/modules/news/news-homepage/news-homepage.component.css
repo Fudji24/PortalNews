@@ -1,0 +1,26 @@
+.container #thumbnailImg{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.container #dateAdded{
+    display: flex;
+    align-items: flex-end;
+    opacity: .5;
+}
+
+.container #postedBy{
+    opacity: .5;
+}
+
+.container a{
+    cursor: pointer;
+}
+
+.table-top{
+    display: flex;
+    justify-content: space-between;
+}

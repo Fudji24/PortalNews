@@ -1,0 +1,41 @@
+<!-- <div class="newsContainer">
+      <div class="news">
+          <div class="new">
+            <ng-container *ngFor="let news of data">
+    
+                <img src={{news?.ImgPath}}>
+                <h1 (click)="getDetails(news?.ID)"> {{news?.Title}}
+                </h1>
+            </ng-container>
+          </div>
+      </div>  
+</div> -->
+<br/>
+<br/>
+
+<div class="container">
+  <div class="table-top">
+    <small>Number of news: {{data?.length}}</small>
+
+      <input [(ngModel)]="NewsTitleFilter" class="form-control" aria-label="Default" type="search" placeholder="Search news" aria-label="Search"  (keyup)="Filtering()" style="width: unset !important;">
+</div>
+  <div class="list-group">
+    <a *ngFor="let news of data" (click)="getDetails(news?.ID)"
+    class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <img id="thumbnailImg" src={{news?.ImgPath}}>
+        <h5 class="mb-1">{{news?.Title}}</h5>
+        <small id="dateAdded">{{news?.DateAdded}}</small>
+      </div>
+      <small id="postedBy" class="mb-1">Posted by admin</small>
+    </a>
+   
+  </div>
+        
+</div>
+
+
+
+
+
+

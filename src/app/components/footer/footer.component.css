@@ -1,0 +1,9 @@
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}

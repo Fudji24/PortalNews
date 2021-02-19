@@ -1,0 +1,14 @@
+.iconBtn{
+    background-color: transparent;
+    color: black;
+    border: 0px;
+    outline: 0px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.table-top{
+    display: flex;
+    justify-content: space-between;
+}
